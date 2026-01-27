@@ -202,8 +202,8 @@ nav a:hover::after {
 .btn-primary:hover {
 	transform: translateY(-1px);
 	background: var(--white-glass);
-	border: 2px solid var(--border-pink);
-	color: var(--text-contrast);
+	border: 1px solid var(--accent-coral);
+	color: var(--accent-berry);
 	box-shadow: 0 12px 30px var(--shadow-strong);
 }
 
@@ -211,10 +211,12 @@ nav a:hover::after {
 	background: transparent;
 	background: var(--white-glass);
 	border: 2px solid var(--border-green);
+	font-weight: 500;
 }
 
 .btn-outline:hover {
-	border: 2px solid var(--border-pink);
+	border: 1px solid var(--accent-coral);
+	color: var(--accent-berry);
 }
 
 /* Burger */
@@ -271,8 +273,8 @@ nav a:hover::after {
 	padding: 4px 10px;
 	border-radius: var(--radius-pill);
 	background: var(--white-glass);
-	border: 2px solid var(--border-green);
-  color: var(--text-contrast);
+	border: 2px solid var(--border-pink);
+	color: var(--text-contrast);
 	font-size: 14px;
 	margin-bottom: 16px;
 }
@@ -280,7 +282,7 @@ nav a:hover::after {
 .hero-label-dot {
 	width: 8px;
 	height: 8px;
-  border-radius: var(--radius-pill);
+	border-radius: var(--radius-pill);
 	background: var(--accent-coral);
 }
 
@@ -440,7 +442,7 @@ nav a:hover::after {
 
 .hero-tag-badge {
   background: var(--white-glass);
-	border: 2px solid var(--border-green);
+	border: 2px solid var(--pink-strong);
 	border-radius: var(--radius-md);
 	padding: 2px 10px;
   border-radius: var(--radius-pill);
@@ -448,7 +450,7 @@ nav a:hover::after {
 }
 
 .hero-tag-badge:hover {
-  border: 2px solid var(--pink-strong);
+  border: 2px solid var(--border-green);
 }
 
 .hero-floating-box {
@@ -538,7 +540,7 @@ nav a:hover::after {
 	transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
 	position: relative;
 	overflow: hidden;
-	border: 1px solid var(--border-green);
+	border: 2px solid var(--border-pink);
 }
 
 .service-card::before {
@@ -552,7 +554,7 @@ nav a:hover::after {
 .service-card:hover {
 	transform: translateY(-4px);
   background: var(--bg-white); 
-	border: 2px solid var(--border-pink);
+	border: 2px solid var(--border-green);
 }
 
 .service-card:hover::before {
@@ -617,8 +619,8 @@ nav a:hover::after {
 
 .about-tag {
 	font-weight: 500;
-	letter-spacing: 0.08em;
-	font-size: 28px;
+	line-height: 1.15;
+	font-size: 36px;
 	padding-bottom: 20px;
 	background: var(--colibri-gradient);
 	-webkit-background-clip: text;
@@ -800,17 +802,17 @@ nav a:hover::after {
 .prices-hint-icon {
 	width: 20px;
 	height: 20px;
-  border-radius: var(--radius-pill);
-	background: var(--accent-gold);
+	border-radius: var(--radius-pill);
+	background: var(--pink-strong);
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	font-size: 14px;
+	font-weight: 500;
 	color: var(--text-dark);
 }
 
 .prices-hint-icon:hover {
-  background: var(--border-pink);
+  background: var(--colibri-green);
 }
 
 /* Section Reviews */
@@ -998,13 +1000,15 @@ textarea {
 }
 
 .contact-info-card h3 {
-	font-size: 16px;
-  font-weight: 500;
+	font-size: 18px;
+  font-weight: 600;
 	margin-bottom: 8px;
-  color: var(--text-soft);
+  color: var(--text-dark);
 }
 
 .contact-item {
+	font-size: 12px;
+	color: var(--text-dark);
   margin-bottom: 10px;
 }
 
@@ -1012,10 +1016,12 @@ textarea {
 	display: block;
 	color: var(--text-dark);
 	margin-bottom: 2px;
+
 }
 
 .contact-hours {
 	font-size: 12px;
+	color: var(--text-dark);
 	margin-top: 8px;
 }
 
