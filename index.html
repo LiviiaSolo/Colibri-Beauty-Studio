@@ -1,537 +1,647 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Beauty-Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Colibri-Beauty-Studio — professional skincare, facial treatments, chemical peels, laser hair removal, and aesthetic services."
+    />
 
-<head>
-	<meta charset="UTF-8" />
-	<title>Colibri-Beauty-Studio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description"
-		content="Colibri-Beauty-Studio — professional skincare, facial treatments, chemical peels, laser hair removal, and aesthetic services." />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-	<link rel="stylesheet" href="style.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon3.svg" />
+  </head>
 
-	<link rel="icon" type="image/svg+xml" href="./images/favicon3.svg">
-</head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav">
+          <div class="logo">
+            <div class="logo-mark" aria-hidden="true">
+              <a href="index.html" class="logo-link"
+                ><img src="./images/colibri.png" alt="Logo"
+              /></a>
+            </div>
+            <span class="logo-text">Colibri-Beauty-Studio</span>
+          </div>
 
-<body>
-	<header>
-		<div class="container">
-			<div class="nav">
-				<div class="logo">
-					<div class="logo-mark" aria-hidden="true">
-						<a href="index.html" class="logo-link"><img src="./images/colibri.png" alt="Logo" /></a>
-					</div>
-					<span class="logo-text">Colibri-Beauty-Studio</span>
-				</div>
+          <button class="burger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-				<button class="burger" aria-label="Toggle menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#prices">Prices</a></li>
+              <li><a href="#contact">Booking</a></li>
+            </ul>
+          </nav>
 
-				<nav class="nav-menu">
-					<ul>
-						<li><a href="#hero">Home</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#prices">Prices</a></li>
-						<li><a href="#contact">Booking</a></li>
-					</ul>
-				</nav>
+          <div class="nav-cta">
+            <span>+421 XXX XXX XXX</span>
+            <button
+              class="btn btn-primary"
+              onclick="scrollToSection('contact')"
+            >
+              Book Online
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
 
-				<div class="nav-cta">
-					<span>+421 XXX XXX XXX</span>
-					<button class="btn btn-primary" onclick="scrollToSection('contact')">
-						Book Online
-					</button>
-				</div>
-			</div>
-		</div>
-	</header>
+    <main>
+      <!-- Section Hero -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="hero-label">
+                <span class="hero-label-dot"></span>
+                Gentle care, visible results
+              </div>
+              <h1 class="hero-title">
+                A beauty studio<br />
+                for <span>healthy</span> and<br />
+                <span>radiant</span> skin
+              </h1>
+              <p class="hero-subtitle">
+                Personalized skincare protocols, modern aesthetic treatments,
+                and a calming atmosphere where you can finally relax.
+              </p>
+              <div class="hero-actions">
+                <button
+                  class="btn btn-primary"
+                  onclick="scrollToSection('contact')"
+                >
+                  Book a Visit
+                </button>
+                <button
+                  class="btn btn-outline"
+                  onclick="scrollToSection('services')"
+                >
+                  View Services
+                </button>
+              </div>
+              <p class="hero-note">
+                <strong>Free consultation</strong> before your first treatment
+                and personalized home-care recommendations.
+              </p>
 
-    <main>   
-        
-			<!-- Section Hero -->
-			<section class="hero" id="hero">
-				<div class="container">
-					<div class="hero-grid">
-						<div>
-							<div class="hero-label">
-								<span class="hero-label-dot"></span>
-								Gentle care, visible results
-							</div>
-							<h1 class="hero-title">
-								A beauty studio<br />
-								for <span>healthy</span> and<br />
-								<span>radiant</span> skin
-							</h1>
-							<p class="hero-subtitle">
-								Personalized skincare protocols, modern aesthetic treatments, and a calming atmosphere where
-								you can finally relax.
-							</p>
-							<div class="hero-actions">
-								<button class="btn btn-primary" onclick="scrollToSection('contact')">
-									Book a Visit
-								</button>
-								<button class="btn btn-outline" onclick="scrollToSection('services')">
-									View Services
-								</button>
-							</div>
-							<p class="hero-note">
-								<strong>Free consultation</strong> before your first treatment and personalized home-care
-								recommendations.
-							</p>
+              <div class="hero-rating">
+                <span class="stars">★★★★★</span>
+                <span class="about-stat-text"
+                  >over <span class="highlight-number">200</span> satisfied
+                  clients</span
+                >
+              </div>
+            </div>
 
-							<div class="hero-rating"> 
-								<span class="stars">★★★★★</span> 
-								<span class="about-stat-text">over <span class="highlight-number">200</span>
-									satisfied clients</span> </div>
-						</div>
+            <div class="hero-img-wrapper">
+              <div class="hero-main-box">
+                <div class="hero-main-left"></div>
+                <div class="hero-main-right">
+                  <div>
+                    <div class="hero-card-header">
+                      <div class="hero-card-title">
+                        Comprehensive Facial Care
+                      </div>
+                      <div class="hero-card-subtitle">
+                        Cleansing, peeling, massage & mask
+                      </div>
+                    </div>
+                    <ul class="hero-card-list">
+                      <li>
+                        <span class="hero-dot"></span> Suitable for all skin
+                        types, including sensitive
+                      </li>
+                      <li>
+                        <span class="hero-dot"></span> Only certified
+                        professional skincare products
+                      </li>
+                      <li>
+                        <span class="hero-dot"></span> Personalized home-care
+                        routine included
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="hero-card-footer">
+                    <div>
+                      <div class="hero-price">from $40</div>
+                      <div>60-90 minutes</div>
+                    </div>
+                    <span class="hero-tag-badge"
+                      >Recommended every 4-6 weeks</span
+                    >
+                  </div>
+                </div>
+              </div>
 
-						<div class="hero-img-wrapper">
-							<div class="hero-main-box">
-									<div class="hero-main-left"></div>
-									<div class="hero-main-right">
-										<div>
-											<div class="hero-card-header">
-												<div class="hero-card-title">Comprehensive Facial Care</div>
-												<div class="hero-card-subtitle">Cleansing, peeling, massage & mask</div>
-											</div>
-											<ul class="hero-card-list">
-												<li><span class="hero-dot"></span> Suitable for all skin types, including
-													sensitive</li>
-												<li><span class="hero-dot"></span> Only certified professional skincare products
-												</li>
-												<li><span class="hero-dot"></span> Personalized home-care routine included</li>
-										</ul>
-										</div>
-										<div class="hero-card-footer">
-											<div>
-												<div class="hero-price">from $40</div>
-												<div>60-90 minutes</div>
-											</div>
-											<span class="hero-tag-badge">Recommended every 4-6 weeks</span>
-										</div>
-									</div>
-							</div>
+              <div class="hero-floating-box">
+                <div class="hero-floating-title">First Visit -10%</div>
+                <div class="hero-floating-text">
+                  Discount for all new clients on any treatment.
+                </div>
+                <div class="hero-floating-tag">
+                  <span></span>
+                  Valid on weekdays until 4 PM
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-							<div class="hero-floating-box">
-								<div class="hero-floating-title">First Visit -10%</div>
-								<div class="hero-floating-text">
-									Discount for all new clients on any treatment.
-								</div>
-								<div class="hero-floating-tag">
-									<span></span>
-									Valid on weekdays until 4 PM
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+      <!-- Section Services -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Studio Services</h2>
+            <p class="section-subtitle">
+              We combine gentle manual techniques with effective aesthetic
+              treatments to deliver both comfort and results.
+            </p>
+          </div>
 
-			<!-- Section Services -->
-			<section class="services" id="services">            
-				<div class="container">
-					<div class="section-header">
-							<h2 class="section-title">Studio Services</h2>
-							<p class="section-subtitle">
-								We combine gentle manual techniques with effective aesthetic treatments 
-								to deliver both comfort	and results.
-							</p>
-					</div>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="./images/services1.png" alt="Facial icon" />
+              </div>
+              <h3 class="service-title">Facial Treatments</h3>
+              <p class="service-text">
+                Classic and advanced protocols, deep cleansing, exfoliation,
+                massage, masks, and personalized home-care.
+              </p>
+              <div class="service-foot">
+                <span>60-90 min</span>
+                <span class="service-price">from $40</span>
+              </div>
+            </article>
 
-					<div class="services-grid">
-						<article class="service-card">
-							<div class="service-icon">
-								<img src="./images/services1.png" alt="Facial icon" />
-							</div>
-							<h3 class="service-title">Facial Treatments</h3>
-							<p class="service-text">
-								Classic and advanced protocols, deep cleansing, exfoliation, massage, masks, and personalized home-care.
-							</p>
-							<div class="service-foot">
-								<span>60-90 min</span>
-								<span class="service-price">from $40</span>
-							</div>
-						</article>
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="./images/services5.png" alt="Facial icon" />
+              </div>
+              <h3 class="service-title">Eye Area Care</h3>
+              <p class="service-text">
+                Gentle treatments to reduce puffiness, dark circles, and early
+                fine lines around the eyes.
+              </p>
+              <div class="service-foot">
+                <span>30-40 min</span>
+                <span class="service-price">from $25</span>
+              </div>
+            </article>
 
-						<article class="service-card">
-							<div class="service-icon">
-								<img src="./images/services5.png" alt="Facial icon" />
-							</div>
-							<h3 class="service-title">Eye Area Care</h3>
-							<p class="service-text">
-								Gentle treatments to reduce puffiness, dark circles, and early fine lines around the eyes.
-							</p>
-							<div class="service-foot">
-								<span>30-40 min</span>
-								<span class="service-price">from $25</span>
-							</div>
-						</article>
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="./images/services3.png" alt="Facial icon" />
+              </div>
+              <h3 class="service-title">Aesthetic Device Treatments</h3>
+              <p class="service-text">
+                Microcurrent therapy, ultrasonic cleansing, lifting techniques
+                to improve tone and skin elasticity.
+              </p>
+              <div class="service-foot">
+                <span>45-75 min</span>
+                <span class="service-price">from $50</span>
+              </div>
+            </article>
 
-						<article class="service-card">
-							<div class="service-icon">
-								<img src="./images/services3.png" alt="Facial icon" />
-							</div>
-							<h3 class="service-title">Aesthetic Device Treatments</h3>
-							<p class="service-text">
-									Microcurrent therapy, ultrasonic cleansing, lifting techniques to improve tone and skin
-									elasticity.
-							</p>
-							<div class="service-foot">
-									<span>45-75 min</span>
-									<span class="service-price">from $50</span>
-							</div>
-						</article>
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="./images/services4.png" alt="Facial icon" />
+              </div>
+              <h3 class="service-title">Laser Hair Removal</h3>
+              <p class="service-text">
+                Comfortable and safe hair removal using modern laser equipment
+                with adjustable power settings.
+              </p>
+              <div class="service-foot">
+                <span>from 15 min</span>
+                <span class="service-price">from $15 / area</span>
+              </div>
+            </article>
 
-						<article class="service-card">
-								<div class="service-icon">
-									<img src="./images/services4.png" alt="Facial icon" />
-								</div>
-								<h3 class="service-title">Laser Hair Removal</h3>
-								<p class="service-text">
-										Comfortable and safe hair removal using modern laser equipment with adjustable power
-										settings.
-								</p>
-								<div class="service-foot">
-										<span>from 15 min</span>
-										<span class="service-price">from $15 / area</span>
-								</div>
-						</article>
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="./images/services2.png" alt="Facial icon" />
+              </div>
+              <h3 class="service-title">Chemical Peels</h3>
+              <p class="service-text">
+                AHA/BHA and combined peels to reduce breakouts, dullness, and
+                early signs of aging.
+              </p>
+              <div class="service-foot">
+                <span>30-45 min</span>
+                <span class="service-price">from $45</span>
+              </div>
+            </article>
 
-						<article class="service-card">
-							<div class="service-icon">
-								<img src="./images/services2.png" alt="Facial icon" />
-							</div>
-							<h3 class="service-title">Chemical Peels</h3>
-							<p class="service-text">
-								AHA/BHA and combined peels to reduce breakouts, dullness, and early signs of aging.
-							</p>
-							<div class="service-foot">
-								<span>30-45 min</span>
-								<span class="service-price">from $45</span>
-							</div>
-						</article>
+            <article class="service-card">
+              <div class="service-icon">
+                <img src="./images/services6.png" alt="Facial icon" />
+              </div>
+              <h3 class="service-title">Skincare Consultation</h3>
+              <p class="service-text">
+                Detailed skin diagnostics, review of your current routine, and
+                personalized treatment recommendations.
+              </p>
+              <div class="service-foot">
+                <span>up to 40 min</span>
+                <span class="service-price">from $20</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-						<article class="service-card">
-							<div class="service-icon">
-								<img src="./images/services6.png" alt="Facial icon" />
-							</div>
-								<h3 class="service-title">Skincare Consultation</h3>
-								<p class="service-text">
-										Detailed skin diagnostics, review of your current routine, and personalized treatment
-										recommendations.
-								</p>
-								<div class="service-foot">
-										<span>up to 40 min</span>
-										<span class="service-price">from $20</span>
-								</div>
-						</article>
-					</div>
-				</div>
-			</section>
+      <!-- Section About -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-grid">
+            <div>
+              <div class="about-tag">About the Studio</div>
+              <h2 class="about-title">Your calm space in a busy world</h2>
+              <p class="about-text">
+                Colibri Beauty Studio is a place where there are no “perfect
+                faces” — only real skin with its own story. We work gently but
+                effectively, respecting your comfort and natural features.
+              </p>
+              <p class="about-text">
+                Everything begins with a conversation: we listen carefully,
+                understand your expectations, study your skin’s needs, and only
+                then create a personalized treatment plan and home-care routine.
+              </p>
 
-			<!-- Section About -->
-			<section class="about" id="about">
-				<div class="container">
-					<div class="about-grid">
-						<div>
-							<div class="about-tag">About the Studio</div>
-								<h2 class="about-title">Your calm space in a busy world</h2>
-								<p class="about-text">
-									Colibri Beauty Studio is a place where there are no “perfect faces” — only real skin with its own story.
-									We work gently but effectively, respecting your comfort and natural features.
-								</p>
-								<p class="about-text">
-										Everything begins with a conversation: we listen carefully, understand your expectations, 
-										study your skin’s needs, and only then create a personalized treatment plan and home-care routine.
-								</p>
+              <ul class="about-list">
+                <li>
+                  <span class="about-dot"></span>Licensed estheticians with
+                  medical background
+                </li>
+                <li>
+                  <span class="about-dot"></span>Trusted professional skincare
+                  brands
+                </li>
+                <li>
+                  <span class="about-dot"></span>Focus on safety, hygiene, and
+                  comfort
+                </li>
+                <li>
+                  <span class="about-dot"></span>Personalized care instead of
+                  generic solutions
+                </li>
+              </ul>
 
-								<ul class="about-list">
-									<li><span class="about-dot"></span>Licensed estheticians with medical background</li>
-									<li><span class="about-dot"></span>Trusted professional skincare brands</li>
-									<li><span class="about-dot"></span>Focus on safety, hygiene, and comfort</li>
-									<li><span class="about-dot"></span>Personalized care instead of generic solutions</li>
-								</ul>
+              <div class="about-stats">
+                <div class="about-stat-item">
+                  <span class="about-stat-number">5+</span>
+                  <span class="about-stat-text"
+                    >years of experience in aesthetics</span
+                  >
+                </div>
+                <div class="about-stat-item">
+                  <span class="about-stat-number">200+</span>
+                  <span class="about-stat-text"
+                    >returning clients who trust us</span
+                  >
+                </div>
+              </div>
+            </div>
 
-								<div class="about-stats">
-									<div class="about-stat-item">
-										<span class="about-stat-number">5+</span>
-										<span class="about-stat-text">years of experience in aesthetics</span>
-									</div>
-									<div class="about-stat-item">
-										<span class="about-stat-number">200+</span>
-										<span class="about-stat-text">returning clients who trust us</span>
-									</div>
-								</div>
-						</div>
+            <div class="about-img-box">
+              <img
+                class="about-img"
+                src="./images/elegant1.png"
+                alt="Beauty Studio"
+              />
+              <div class="about-label-box">
+                Gentle treatments, honest recommendations — no unrealistic
+                promises.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-						<div class="about-img-box">
-							<img class="about-img" src="./images/elegant1.png" alt="Beauty Studio" />
-							<div class="about-label-box">
-								Gentle treatments, honest recommendations — no unrealistic promises.
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+      <!-- Section Prices -->
+      <section class="prices" id="prices">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Approximate Prices</h2>
+            <p class="section-subtitle">
+              Final cost depends on your skin condition, chosen techniques, and
+              treatment duration. Everything is discussed beforehand.
+            </p>
+          </div>
 
-        <!-- Section Prices -->
-			<section class="prices" id="prices">
-				<div class="container">
-					<div class="section-header">
-						<h2 class="section-title">Approximate Prices</h2>
-						<p class="section-subtitle">
-							Final cost depends on your skin condition, chosen techniques, and treatment duration.
-							Everything is discussed beforehand.
-						</p>
-					</div>
+          <div class="prices-wrapper">
+            <div class="prices-row">
+              <div>
+                <div class="price-item">
+                  <div>
+                    <div class="price-name">Basic Facial 💧🌸</div>
+                    <div class="price-note">
+                      Cleansing, gentle exfoliation, massage, mask, finishing
+                      care.
+                    </div>
+                  </div>
+                  <div class="price-value">from $40</div>
+                </div>
 
-					<div class="prices-wrapper">
-						<div class="prices-row">
-							<div>
-								<div class="price-item">
-									<div>
-										<div class="price-name">Basic Facial 💧🌸</div>
-										<div class="price-note">Cleansing, gentle exfoliation, massage, mask, finishing care.</div>
-									</div>
-									<div class="price-value">from $40</div>
-								</div>
+                <div class="price-item">
+                  <div>
+                    <div class="price-name">Deep Cleansing Facial 🤝💦</div>
+                    <div class="price-note">
+                      Ideal for oily, problematic, and combination skin.
+                    </div>
+                  </div>
+                  <div class="price-value">from $55</div>
+                </div>
 
-								<div class="price-item">
-									<div>
-										<div class="price-name">Deep Cleansing Facial 🤝💦</div>
-										<div class="price-note">Ideal for oily, problematic, and combination skin.</div>
-									</div>
-									<div class="price-value">from $55</div>
-								</div>
+                <div class="price-item">
+                  <div>
+                    <div class="price-name">Chemical Peel 🧪✨</div>
+                    <div class="price-note">
+                      Customized concentration, recommended as a course of 3-6
+                      sessions.
+                    </div>
+                  </div>
+                  <div class="price-value">from $45</div>
+                </div>
 
-								<div class="price-item">
-									<div>
-										<div class="price-name">Chemical Peel 🧪✨</div>
-										<div class="price-note">Customized concentration, recommended as a course of 3-6 sessions.</div>
-									</div>
-									<div class="price-value">from $45</div>
-								</div>
+                <div class="price-item">
+                  <div>
+                    <div class="price-name">
+                      Aesthetic Lifting Treatment 🌸🌿
+                    </div>
+                    <div class="price-note">
+                      Improves firmness and contours of the face and neck.
+                    </div>
+                  </div>
+                  <div class="price-value">from $65</div>
+                </div>
 
-								<div class="price-item">
-									<div>
-										<div class="price-name">Aesthetic Lifting Treatment 🌸🌿</div>
-										<div class="price-note">Improves firmness and contours of the face and neck.</div>
-									</div>
-									<div class="price-value">from $65</div>
-								</div>
+                <div class="price-item">
+                  <div>
+                    <div class="price-name">
+                      Laser Hair Removal (small areas) 💖⚡
+                    </div>
+                    <div class="price-note">
+                      Underarms, bikini line, upper lip, and other small zones.
+                    </div>
+                  </div>
+                  <div class="price-value">from $15</div>
+                </div>
 
-								<div class="price-item">
-									<div>
-										<div class="price-name">Laser Hair Removal (small areas) 💖⚡</div>
-										<div class="price-note">Underarms, bikini line, upper lip, and other small zones.
-										</div>
-									</div>
-									<div class="price-value">from $15</div>
-								</div>
+                <div class="price-item">
+                  <div>
+                    <div class="price-name">Skincare Consultation ✨👩‍⚕️</div>
+                    <div class="price-note">
+                      Fee is deducted if you book a treatment on the same day.
+                    </div>
+                  </div>
+                  <div class="price-value">from $20</div>
+                </div>
+              </div>
 
-								<div class="price-item">
-									<div>
-										<div class="price-name">Skincare Consultation ✨👩‍⚕️</div>
-										<div class="price-note">Fee is deducted if you book a treatment on the same day.
-										</div>
-									</div>
-									<div class="price-value">from $20</div>
-								</div>
-							</div>
+              <aside class="prices-aside">
+                <p>
+                  <strong>Transparency & honesty</strong><br />
+                  Before the treatment, you will know the full cost, duration,
+                  expected results, and any limitations.
+                </p>
+                <p style="margin-top: 10px">
+                  During the consultation, the esthetician will help you choose
+                  the best option: a single treatment or a course, and create a
+                  realistic skincare plan tailored to your lifestyle.
+                </p>
+                <div class="prices-hint">
+                  <div class="prices-hint-icon">i</div>
+                  <span
+                    >For an accurate plan, book a short skin diagnostic
+                    session.</span
+                  >
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
 
-							<aside class="prices-aside">
-								<p><strong>Transparency & honesty</strong><br />
-									Before the treatment, you will know the full cost, duration, expected results, and any limitations.
-								</p>
-								<p style="margin-top: 10px;">
-									During the consultation, the esthetician will help you choose the best option: a single treatment or a course,
-									and create a realistic skincare plan tailored to your lifestyle.
-								</p>
-								<div class="prices-hint">
-									<div class="prices-hint-icon">i</div>
-									<span>For an accurate plan, book a short skin diagnostic session.</span>
-								</div>
-							</aside>
-						</div>
-					</div>
-				</div>
-			</section>
+      <!-- Section Reviews -->
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Client Reviews</h2>
+            <p class="section-subtitle">
+              We care not only about visible results but also about your comfort
+              and experience.
+            </p>
+          </div>
 
-			<!-- Section Reviews -->
-			<section class="reviews" id="reviews">
-				<div class="container">
-					<div class="section-header">
-						<h2 class="section-title">Client Reviews</h2>
-						<p class="section-subtitle">
-								We care not only about visible results but also about your comfort and experience.
-						</p>
-					</div>
+          <div class="reviews-grid">
+            <article class="review-card">
+              <div class="review-left">
+                <img
+                  class="review-photo"
+                  src="./images/review1.jpg"
+                  alt="Marina"
+                />
+              </div>
+              <div class="review-right">
+                <p>
+                  Beautiful studio with a very cozy atmosphere. The esthetician
+                  explains everything clearly and never pushes unnecessary
+                  treatments. After a course of peels, my skin became smoother
+                  and breakouts decreased significantly.
+                </p>
+                <div class="review-author">
+                  <span class="review-name">Marina</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+            </article>
 
-					<div class="reviews-grid">
-						<article class="review-card">
-							<div class="review-left">
-								<img class="review-photo" src="./images/review1.jpg" alt="Marina">
-							</div>
-							<div class="review-right">
-								<p>
-									Beautiful studio with a very cozy atmosphere. The esthetician explains everything clearly and
-									never pushes unnecessary treatments.
-									After a course of peels, my skin became smoother and breakouts decreased significantly.
-								</p>
-								<div class="review-author">
-									<span class="review-name">Marina</span>
-									<span class="review-stars">★★★★★</span>
-								</div>
-							</div>
-						</article>
+            <article class="review-card">
+              <div class="review-left">
+                <img
+                  class="review-photo"
+                  src="./images/review3.png"
+                  alt="Marina"
+                />
+              </div>
+              <div class="review-right">
+                <p>
+                  Very gentle approach. I didn’t want to “overdo” my face — just
+                  refresh it. After the treatments, my skin looks rested and
+                  naturally glowing.
+                </p>
+                <div class="review-author">
+                  <span class="review-name">Irene</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+            </article>
 
-						<article class="review-card">
-							<div class="review-left">
-								<img class="review-photo" src="./images/review3.png" alt="Marina">
-							</div>
-							<div class="review-right">
-								<p>
-									Very gentle approach. I didn’t want to “overdo” my face — just refresh it.
-									After the treatments, my skin looks rested and naturally glowing.
-								</p>
-								<div class="review-author">
-									<span class="review-name">Irene</span>
-									<span class="review-stars">★★★★★</span>
-								</div>
-							</div>
-						</article>
+            <article class="review-card">
+              <div class="review-left">
+                <img
+                  class="review-photo"
+                  src="./images/review2.png"
+                  alt="Marina"
+                />
+              </div>
+              <div class="review-right">
+                <p>
+                  I loved that they did a detailed consultation before the
+                  treatment and explained possible reactions. Laser hair removal
+                  was comfortable, and I saw results after the first session.
+                </p>
+                <div class="review-author">
+                  <span class="review-name">Elena</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-						<article class="review-card">
-							<div class="review-left">
-								<img class="review-photo" src="./images/review2.png" alt="Marina">
-							</div>
-							<div class="review-right">
-								<p>
-									I loved that they did a detailed consultation before the treatment and explained possible
-									reactions.
-									Laser hair removal was comfortable, and I saw results after the first session.
-								</p>
-								<div class="review-author">
-									<span class="review-name">Elena</span>
-									<span class="review-stars">★★★★★</span>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
+      <!-- Sectson Contact / Booking -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Book an Appointment</h2>
+            <p class="section-subtitle">
+              Leave a request — we will contact you to help choose a treatment
+              and find a convenient time.
+            </p>
+          </div>
 
-			<!-- Sectson Contact / Booking -->
-			<section class="contact" id="contact">
-				<div class="container">
-					<div class="section-header">
-						<h2 class="section-title">Book an Appointment</h2>
-						<p class="section-subtitle">
-								Leave a request — we will contact you to help choose a treatment and find a convenient time.
-						</p>
-					</div>
+          <div class="contact-grid">
+            <div class="form-box">
+              <form onsubmit="handleSubmit(event)">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="e.g., Anna"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+421..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="service">Preferred Service</label>
+                    <select id="service" name="service">
+                      <option value="">Select a service</option>
+                      <option>Facial Treatment</option>
+                      <option>Chemical Peel</option>
+                      <option>Aesthetic Device Treatment</option>
+                      <option>Laser Hair Removal</option>
+                      <option>Skincare Consultation</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <select id="time" name="time">
+                      <option value="">Any time</option>
+                      <option>Morning (10:00-12:00)</option>
+                      <option>Afternoon (12:00-16:00)</option>
+                      <option>Evening (16:00-20:00)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Comments or Notes</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tell us briefly about your skin concerns"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Request
+                </button>
+                <p class="form-footnote">
+                  We will contact you to confirm your appointment.
+                </p>
+              </form>
+            </div>
 
-					<div class="contact-grid">
-						<div class="form-box">
-							<form onsubmit="handleSubmit(event)">
-								<div class="form-row">
-									<div class="form-group">
-										<label for="name">Name</label>
-										<input type="text" id="name" name="name" placeholder="e.g., Anna" required />
-									</div>
-									<div class="form-group">
-										<label for="phone">Phone</label>
-										<input type="tel" id="phone" name="phone" placeholder="+421..." required />
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group">
-										<label for="service">Preferred Service</label>
-										<select id="service" name="service">
-											<option value="">Select a service</option>
-											<option>Facial Treatment</option>
-											<option>Chemical Peel</option>
-											<option>Aesthetic Device Treatment</option>
-											<option>Laser Hair Removal</option>
-											<option>Skincare Consultation</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<label for="time">Preferred Time</label>
-										<select id="time" name="time">
-											<option value="">Any time</option>
-											<option>Morning (10:00-12:00)</option>
-											<option>Afternoon (12:00-16:00)</option>
-											<option>Evening (16:00-20:00)</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="message">Comments or Notes</label>
-									<textarea id="message" name="message"
-											placeholder="Tell us briefly about your skin concerns"></textarea>
-								</div>
-								<button type="submit" class="btn btn-primary">
-									Send Request
-								</button>
-								<p class="form-footnote">
-									We will contact you to confirm your appointment.
-								</p>
-							</form>
-						</div>
-
-						<aside class="contact-info-card">
-								<h3>Where to Find Us</h3>
-								<div class="contact-item">
-										<strong>Address</strong>
-										Bratislava, Oksamitova 11
-								</div>
-								<div class="contact-item">
-										<strong>Phone</strong>
-										+421 XXX XXX XXX
-								</div>
-								<div class="contact-item">
-										<strong>Instagram</strong>
-										@colibri.beauty.studio
-								</div>
-								<div class="contact-hours">
-										<strong>Working Hours</strong><br />
-										Mon-Fri: 10:00-20:00<br />
-										Sat: 10:00-16:00<br />
-										Sun: Closed
-								</div>
-								<div class="contact-badge">
-										<span class="heart">❤</span>
-										A place of gentle care for your skin and well-being.
-								</div>
-						</aside>
-					</div>
-				</div>
-			</section>
+            <aside class="contact-info-card">
+              <h3>Where to Find Us</h3>
+              <div class="contact-item">
+                <strong>Address</strong>
+                Bratislava, Oksamitova 11
+              </div>
+              <div class="contact-item">
+                <strong>Phone</strong>
+                +421 XXX XXX XXX
+              </div>
+              <div class="contact-item">
+                <strong>Instagram</strong>
+                @colibri.beauty.studio
+              </div>
+              <div class="contact-hours">
+                <strong>Working Hours</strong><br />
+                Mon-Fri: 10:00-20:00<br />
+                Sat: 10:00-16:00<br />
+                Sun: Closed
+              </div>
+              <div class="contact-badge">
+                <span class="heart">❤</span>
+                A place of gentle care for your skin and well-being.
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-			<div class="container">
-				<div class="footer-row">
-					<span>© <span id="year"></span> Colibri-Beauty-Studio. All rights reserved.</span>
-						<div class="footer-links">
-							<a href="#hero">Home</a>
-							<a href="#services">Services</a>
-							<a href="#prices">Prices</a>
-							<a href="#contact">Contact</a>
-						</div>
-				</div>
-			</div>
+      <div class="container">
+        <div class="footer-row">
+          <span
+            >© <span id="year"></span> Colibri-Beauty-Studio. All rights
+            reserved.</span
+          >
+          <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#services">Services</a>
+            <a href="#prices">Prices</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
-		<script src="script.js" defer></script>
-
-</body>
-
+    <script src="script.js" defer></script>
+  </body>
 </html>
